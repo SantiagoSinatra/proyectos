@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SenderActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="Nombre: "
+        android:id="@+id/sender_tv_nombre" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="Apellido: "
+        android:layout_below="@id/sender_tv_nombre"
+        android:id="@+id/sender_tv_apellido" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="Edad: "
+        android:layout_below="@+id/sender_tv_apellido"
+        android:id="@+id/sender_tv_edad" />
+
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:layout_toRightOf="@+id/sender_tv_nombre"
+        android:id="@+id/sender_et_nombre"/>
+
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:layout_toRightOf="@id/sender_tv_apellido"
+        android:layout_below="@+id/sender_et_nombre"
+        android:id="@+id/sender_et_apellido"/>
+
+    <EditText
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:layout_toRightOf="@id/sender_tv_edad"
+        android:layout_below="@id/sender_et_apellido"
+        android:id="@+id/sender_et_edad"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sender_et_edad">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="MANDAR"/>
+    </FrameLayout>
+
+</RelativeLayout>
