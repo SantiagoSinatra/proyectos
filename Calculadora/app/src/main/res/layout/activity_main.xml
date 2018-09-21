@@ -8,18 +8,28 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="180dp"
         android:orientation="horizontal"
         android:id="@+id/linearlayout_textview">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="UN RESULTADO"
+            android:layout_gravity="bottom|end"
+            android:text="UN RESULTADO DE LA OPERACION "
             android:textSize="40dp"
+            android:textAlignment="textEnd"
             android:id="@+id/textview_resultado"/>
 
     </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C"
+        android:textSize="40dp"
+        android:id="@+id/button_borrar"
+        android:layout_below="@+id/linearlayout_textview"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,7 +37,7 @@
         android:orientation="horizontal"
         android:weightSum="4"
         android:id="@+id/linearlayout_botones_primera_fila"
-        android:layout_below="@+id/linearlayout_textview">
+        android:layout_below="@+id/button_borrar">
 
         <Button
             android:layout_width="wrap_content"
@@ -154,6 +164,38 @@
         android:weightSum="4"
         android:id="@+id/linearlayout_botones_cuarta_fila"
         android:layout_below="@+id/linearlayout_botones_tercera_fila">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="30dp"
+            android:id="@+id/button_0"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="."
+            android:textSize="30dp"
+            android:id="@+id/button_dot"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="="
+            android:textSize="30dp"
+            android:id="@+id/button_igual"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="30dp"
+            android:id="@+id/button_suma"
+            android:layout_weight="1" />
 
     </LinearLayout>
 
